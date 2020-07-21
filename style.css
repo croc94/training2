@@ -1,0 +1,145 @@
+body {
+  font-family: Roboto;
+  --grad_Col_1: rgba(252, 227, 138, 0.7);
+  --grad_Col_2: rgba(243, 129, 129, 0.7);
+  --navCol: #fce38a;
+}
+
+body .btn {
+  border-radius: 0;
+}
+
+body .MainContainer {
+  width: 120rem;
+}
+
+body .MainContainer header {
+  background-image: url(img/layer-15.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+body .MainContainer header .Sec_1 {
+  background: -webkit-gradient(linear, left bottom, left top, from(var(--grad_Col_1)), to(var(--grad_Col_2))), -webkit-gradient(linear, left top, left bottom, from(var(--grad_Col_1)), to(var(--grad_Col_1)));
+  background: linear-gradient(to top, var(--grad_Col_1), var(--grad_Col_2)), linear-gradient(to bottom, var(--grad_Col_1), var(--grad_Col_1));
+}
+
+body .MainContainer header .Sec_1 .navbar {
+  font-family: Montserrat;
+  font-size: 0.875rem;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  padding-top: 2.5rem;
+}
+
+body .MainContainer header .Sec_1 .navbar .container .navbar-brand {
+  font-size: 1.875rem;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+}
+
+body .MainContainer header .Sec_1 .navbar .container .collapse .navbar-nav .nav-item .nav-link {
+  color: var(--white);
+  -webkit-transition: color 2s linear;
+  transition: color 2s linear;
+  border-bottom: 2px solid transparent;
+  -webkit-transition: border-bottom 1s ease-in;
+  transition: border-bottom 1s ease-in;
+}
+
+body .MainContainer header .Sec_1 .navbar .container .collapse .navbar-nav .nav-item .nav-link:hover {
+  border-bottom: 2px solid var(--navCol);
+  color: var(--navCol);
+}
+
+body .MainContainer header .Sec_1 .creativeLine {
+  font-family: 'Kaushan Script', cursive;
+  font-size: 72px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  margin-top: 11.2rem;
+}
+
+body .MainContainer header .Sec_1 .h1 {
+  font-size: 9.375rem;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 0.93;
+  letter-spacing: normal;
+  margin-top: 2.625rem;
+}
+
+body .MainContainer header .Sec_1 .lineBlock {
+  height: 0.1875rem;
+  width: 3.125%;
+  margin: 4.45rem auto 3.125rem auto;
+}
+
+body .MainContainer header .Sec_1 .btn {
+  font-size: 0.875rem;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  border: solid 3px var(--white);
+  padding: 0.875rem 2rem;
+}
+
+body .MainContainer header .Sec_1 .Sec_1_list {
+  width: 65%;
+  font-size: 1.5rem;
+  margin-bottom: 1.7rem;
+}
+
+body .MainContainer header .Sec_1 .Sec_1_list .Sec_1_list_item {
+  width: 20%;
+  margin-top: 10.5rem;
+}
+
+body .MainContainer header .Sec_1 .Sec_1_list .Sec_1_list_item .item_line {
+  width: 100%;
+  height: 3px;
+}
+
+body .MainContainer header .Sec_1 .Sec_1_list .Sec_1_list_item .item_line .item_subline {
+  width: 25%;
+  height: 100%;
+  position: relative;
+  background-color: transparent !important;
+  -webkit-transition: background-color 1s ease-in;
+  transition: background-color 1s ease-in;
+}
+
+body .MainContainer header .Sec_1 .Sec_1_list .Sec_1_list_item:nth-child(1) .item_line .item_subline {
+  left: 0%;
+}
+
+body .MainContainer header .Sec_1 .Sec_1_list .Sec_1_list_item:nth-child(2) .item_line .item_subline {
+  left: 25%;
+}
+
+body .MainContainer header .Sec_1 .Sec_1_list .Sec_1_list_item:nth-child(3) .item_line .item_subline {
+  left: 50%;
+}
+
+body .MainContainer header .Sec_1 .Sec_1_list .Sec_1_list_item:nth-child(4) .item_line .item_subline {
+  left: 75%;
+}
+
+body .MainContainer header .Sec_1 .Sec_1_list .Sec_1_list_item:hover .item_line .item_subline {
+  background-color: red !important;
+}
+
+body .MainContainer header .Sec_1 .Sec_1_list .Sec_1_list_item p span {
+  font-size: 1.125rem;
+  font-weight: normal;
+}
+/*# sourceMappingURL=style.css.map */
