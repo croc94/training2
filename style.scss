@@ -1,16 +1,30 @@
 body {
     font-family: Roboto;
+    background-color: var(--white);
 
     //****    variables    ****
     --grad_Col_1 : rgba(252, 227, 138, 0.7);
-    --grad_Col_2 : rgba(243, 129, 129, 0.7);
+    --grad_Col_2 : #f38181b3;
     --navCol: #fce38a;
+    --Sec_2_text_Col : #333333;
+    --redLine_Col: #f38181;
+    --Sec_2_fontAwes_Col: #95e1d3;
+    --Sec_2_cardText_Col:  #999999;
+    --Sec_2_lineBlock_Col: #e5e5e5;
+
+    
 
     //****    classes    ****
     .btn {
         border-radius: 0;
     }
 
+    .lineBlock {
+        height:0.1875rem;
+        width: 3.125%;
+    }
+
+    //****    Ny styles    ****
     .MainContainer {
         width: 120rem;
 
@@ -18,12 +32,12 @@ body {
             background-image: url(img/layer-15.jpg);
             background-size: cover;
             background-repeat: no-repeat;
+            font-family: 'Montserrat', sans-serif;
 
             .Sec_1 {
                 background: linear-gradient(to top, var(--grad_Col_1), var(--grad_Col_2)), linear-gradient(to bottom, var(--grad_Col_1), var(--grad_Col_1));
 
                 .navbar {
-                    font-family: Montserrat;
                     font-size: 0.875rem;
                     font-weight: normal;
                     font-stretch: normal;
@@ -83,8 +97,6 @@ body {
                 }
 
                 .lineBlock {
-                    height:0.1875rem;
-                    width: 3.125%;
                     margin: 4.45rem auto 3.125rem auto;
                 }
 
@@ -144,6 +156,76 @@ body {
                             font-weight: normal;
                         }
                     }
+                }
+            }
+        }
+
+        article {
+            .Sec_2 {
+                color: var(--Sec_2_text_Col);
+
+                p:first-child {
+                    font-family: 'Kaushan Script', cursive;
+                    font-size: 1.5rem;
+                    margin: 5.625rem 0 1.25rem 0;
+                }
+
+                p:nth-child(2) {
+                    font-family: 'Montserrat', sans-serif;
+                    font-size: 1.875rem;
+                }
+
+                .lineBlock {
+                    background-color: var(--redLine_Col);
+                    margin: 2.625rem auto 4.125rem auto;
+                }
+
+                .container {
+                    width: 60%;
+                    position: relative;
+
+                    .row {
+                        .col-md-4 {
+                            .card {
+                                border: none;
+
+                                .row {
+                                    .col-md-3 {
+                                        .fa {
+                                            color: var(--Sec_2_fontAwes_Col);
+                                            font-size: 2rem;
+                                        }
+                                    }
+
+                                    .col-md-9 {
+                                        .card-body {
+                                            padding: 0;
+
+                                            .card-title {
+                                                font-family: 'Montserrat', sans-serif;
+                                                font-size: 0.875rem;
+                                            }
+
+                                            .card-text {
+                                                font-size:0.8rem;
+                                                line-height: 1.6;
+                                                color: var(--Sec_2_cardText_Col);
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+
+                        .lineBlock {
+                            background-color: var(--Sec_2_lineBlock_Col);
+                            width: 100%;
+                            /* position: absolute;
+                            top: 20%; */
+                        }
+                    }
+
+                    
                 }
             }
         }

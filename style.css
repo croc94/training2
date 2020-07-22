@@ -1,12 +1,23 @@
 body {
   font-family: Roboto;
+  background-color: var(--white);
   --grad_Col_1: rgba(252, 227, 138, 0.7);
-  --grad_Col_2: rgba(243, 129, 129, 0.7);
+  --grad_Col_2: #f38181b3;
   --navCol: #fce38a;
+  --Sec_2_text_Col: #333333;
+  --redLine_Col: #f38181;
+  --Sec_2_fontAwes_Col: #95e1d3;
+  --Sec_2_cardText_Col:  #999999;
+  --Sec_2_lineBlock_Col: #e5e5e5;
 }
 
 body .btn {
   border-radius: 0;
+}
+
+body .lineBlock {
+  height: 0.1875rem;
+  width: 3.125%;
 }
 
 body .MainContainer {
@@ -17,6 +28,7 @@ body .MainContainer header {
   background-image: url(img/layer-15.jpg);
   background-size: cover;
   background-repeat: no-repeat;
+  font-family: 'Montserrat', sans-serif;
 }
 
 body .MainContainer header .Sec_1 {
@@ -25,7 +37,6 @@ body .MainContainer header .Sec_1 {
 }
 
 body .MainContainer header .Sec_1 .navbar {
-  font-family: Montserrat;
   font-size: 0.875rem;
   font-weight: normal;
   font-stretch: normal;
@@ -78,8 +89,6 @@ body .MainContainer header .Sec_1 .h1 {
 }
 
 body .MainContainer header .Sec_1 .lineBlock {
-  height: 0.1875rem;
-  width: 3.125%;
   margin: 4.45rem auto 3.125rem auto;
 }
 
@@ -141,5 +150,61 @@ body .MainContainer header .Sec_1 .Sec_1_list .Sec_1_list_item:hover .item_line 
 body .MainContainer header .Sec_1 .Sec_1_list .Sec_1_list_item p span {
   font-size: 1.125rem;
   font-weight: normal;
+}
+
+body .MainContainer article .Sec_2 {
+  color: var(--Sec_2_text_Col);
+}
+
+body .MainContainer article .Sec_2 p:first-child {
+  font-family: 'Kaushan Script', cursive;
+  font-size: 1.5rem;
+  margin: 5.625rem 0 1.25rem 0;
+}
+
+body .MainContainer article .Sec_2 p:nth-child(2) {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.875rem;
+}
+
+body .MainContainer article .Sec_2 .lineBlock {
+  background-color: var(--redLine_Col);
+  margin: 2.625rem auto 4.125rem auto;
+}
+
+body .MainContainer article .Sec_2 .container {
+  width: 60%;
+  position: relative;
+}
+
+body .MainContainer article .Sec_2 .container .row .col-md-4 .card {
+  border: none;
+}
+
+body .MainContainer article .Sec_2 .container .row .col-md-4 .card .row .col-md-3 .fa {
+  color: var(--Sec_2_fontAwes_Col);
+  font-size: 2rem;
+}
+
+body .MainContainer article .Sec_2 .container .row .col-md-4 .card .row .col-md-9 .card-body {
+  padding: 0;
+}
+
+body .MainContainer article .Sec_2 .container .row .col-md-4 .card .row .col-md-9 .card-body .card-title {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 0.875rem;
+}
+
+body .MainContainer article .Sec_2 .container .row .col-md-4 .card .row .col-md-9 .card-body .card-text {
+  font-size: 0.8rem;
+  line-height: 1.6;
+  color: var(--Sec_2_cardText_Col);
+}
+
+body .MainContainer article .Sec_2 .container .row .lineBlock {
+  background-color: var(--Sec_2_lineBlock_Col);
+  width: 100%;
+  /* position: absolute;
+                            top: 20%; */
 }
 /*# sourceMappingURL=style.css.map */
