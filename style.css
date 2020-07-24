@@ -18,6 +18,18 @@ body .btn {
 body .lineBlock {
   height: 0.1875rem;
   width: 3.125%;
+  background-color: var(--redLine_Col);
+  margin: 2.625rem auto 4.125rem auto;
+}
+
+body .kaushkanTextStyle {
+  font-family: 'Kaushan Script', cursive;
+  font-size: 1.5rem;
+}
+
+body .heading {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.875rem;
 }
 
 body .MainContainer {
@@ -154,22 +166,11 @@ body .MainContainer header .Sec_1 .Sec_1_list .Sec_1_list_item p span {
 
 body .MainContainer article .Sec_2 {
   color: var(--Sec_2_text_Col);
+  padding-top: 5.625rem;
 }
 
 body .MainContainer article .Sec_2 p:first-child {
-  font-family: 'Kaushan Script', cursive;
-  font-size: 1.5rem;
-  margin: 5.625rem 0 1.25rem 0;
-}
-
-body .MainContainer article .Sec_2 p:nth-child(2) {
-  font-family: 'Montserrat', sans-serif;
-  font-size: 1.875rem;
-}
-
-body .MainContainer article .Sec_2 .lineBlock {
-  background-color: var(--redLine_Col);
-  margin: 2.625rem auto 4.125rem auto;
+  margin-bottom: 1.25rem;
 }
 
 body .MainContainer article .Sec_2 .container {
@@ -206,5 +207,49 @@ body .MainContainer article .Sec_2 .container .row .lineBlock {
   width: 100%;
   /* position: absolute;
                             top: 20%; */
+}
+
+body .MainContainer article .Sec_3 {
+  background-color: rgba(255, 255, 255, 0.7);
+  width: 100%;
+  position: relative;
+  padding-top: 6.8rem;
+  display: block;
+}
+
+body .MainContainer article .Sec_3:after {
+  content: '';
+  background-image: url(img/layer-45.jpg);
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: -1;
+}
+
+body .MainContainer article .Sec_3 p:first-child {
+  margin-bottom: 1.375rem;
+}
+
+body .MainContainer article .Sec_3 .lineBlock {
+  margin-bottom: 2.8rem;
+}
+
+body .MainContainer article .Sec_3 .Sec_3_imgBlock {
+  width: 25%;
+  position: relative;
+}
+
+body .MainContainer article .Sec_3 .Sec_3_imgBlock img:first-child {
+  width: 100%;
+}
+
+body .MainContainer article .Sec_3 .Sec_3_imgBlock img:last-child {
+  width: 55%;
+  position: absolute;
+  bottom: -20%;
+  right: -30%;
 }
 /*# sourceMappingURL=style.css.map */
