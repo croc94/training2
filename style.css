@@ -9,6 +9,7 @@ body {
   --Sec_2_fontAwes_Col: #95e1d3;
   --Sec_2_cardText_Col:  #999999;
   --Sec_2_lineBlock_Col: #e5e5e5;
+  --subscribe_height: 2.5rem;
 }
 
 body .btn {
@@ -485,5 +486,86 @@ body .MainContainer article .Sec_6 .container .card img {
 body .MainContainer article .Sec_6 .container .card .card-body .lineBlock {
   margin: 1rem 0 1.5rem 0;
   width: 15%;
+}
+
+body .MainContainer .Sec_7 {
+  padding-top: 4.5rem;
+  padding-bottom: 1.5rem;
+}
+
+body .MainContainer .Sec_7 .Sec_7_block_1 {
+  padding: 0;
+}
+
+body .MainContainer .Sec_7 .Sec_7_block_1 .card-body {
+  padding: 0.8rem;
+}
+
+body .MainContainer .Sec_7 .Sec_7_block_1 .card-body .card-title {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 3rem;
+  color: var(--Sec_2_cardText_Col);
+}
+
+body .MainContainer .Sec_7 .Sec_7_block_1 .card-body .folowerClass {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 0.875rem;
+}
+
+body .MainContainer .Sec_7 .Sec_7_block_1 .card-body .folowerClass span {
+  font-size: 1rem;
+}
+
+body .MainContainer .Sec_7 .Sec_7_block_1 .card-body .block_1_contacts p {
+  display: inline;
+  margin-right: 1rem;
+}
+
+body .MainContainer .Sec_7 .Sec_7_block_1 .card-body .block_1_contacts a .fa {
+  font-size: 1rem;
+  color: var(--Sec_2_fontAwes_Col);
+  margin: 0 0.25rem 0 0.25rem;
+}
+
+body .MainContainer .Sec_7 .Sec_7_block_1 .card-body .form-inline {
+  width: 75;
+}
+
+body .MainContainer .Sec_7 .Sec_7_block_1 .card-body .form-inline .form-group {
+  margin-right: 0;
+  height: var(--subscribe_height);
+}
+
+body .MainContainer .Sec_7 .Sec_7_block_1 .card-body .form-inline .form-group .form-control {
+  font-size: 1.1rem;
+}
+
+body .MainContainer .Sec_7 .Sec_7_block_1 .card-body .form-inline .btn {
+  color: var(--white);
+  background-color: var(--Sec_2_fontAwes_Col);
+  border: none;
+  height: var(--subscribe_height);
+}
+
+body .MainContainer .Sec_7 .Sec_7_block_2 .Sec_7_block_2_cardContainer .card {
+  border: none;
+  width: 100% !important;
+}
+
+body .MainContainer .Sec_7 .Sec_7_block_2 .Sec_7_block_2_cardContainer .card .card-img-top {
+  width: 7.5rem;
+  height: 5rem;
+}
+
+body .MainContainer .Sec_7 .Sec_7_block_2 .Sec_7_block_2_cardContainer .card .card-body .card-text {
+  font-size: 0.6rem;
+}
+
+body .MainContainer .Sec_7 .Sec_7_block_3 .Sec_7_block_3_picturreBlock img {
+  margin: 0.125rem;
+}
+
+body .MainContainer .Sec_7 p:last-child span {
+  color: var(--redLine_Col);
 }
 /*# sourceMappingURL=style.css.map */

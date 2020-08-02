@@ -11,6 +11,7 @@ body {
     --Sec_2_fontAwes_Col: #95e1d3;
     --Sec_2_cardText_Col:  #999999;
     --Sec_2_lineBlock_Col: #e5e5e5;
+    --subscribe_height: 2.5rem;
 
     
 
@@ -39,7 +40,6 @@ body {
 
     .greyText {
         font-size: 0.8rem;
-        //font-style: 'Roboto';
         line-height: 1.6;
         color: var(--Sec_2_cardText_Col);
     }
@@ -518,6 +518,103 @@ body {
                             }
                         }
                     }
+                }
+            }
+        }
+
+        .Sec_7 {
+            padding-top: 4.5rem;
+            padding-bottom: 1.5rem;
+
+            .Sec_7_block_1 {
+                padding: 0;
+
+                .card-body {
+                    padding: 0.8rem;
+
+                    .card-title {
+                        font-family: 'Montserrat', sans-serif;
+                        font-size: 3rem;
+                        color: var(--Sec_2_cardText_Col);
+                    }
+
+                    .folowerClass {
+                        font-family: 'Montserrat', sans-serif;
+                        font-size: 0.875rem;
+
+                        span {
+                            font-size: 1rem;
+                        }
+                    }
+
+                    .block_1_contacts {
+                        p {
+                            display: inline;
+                            margin-right: 1rem;
+                        }
+
+                        a {
+                            .fa {
+                                font-size: 1rem;
+                                color: var(--Sec_2_fontAwes_Col);
+                                margin: 0 0.25rem 0 0.25rem;
+                            }
+                        }
+                    }
+
+                    .form-inline {
+                        width: 75;
+                        .form-group {
+                            margin-right: 0;
+                            height: var(--subscribe_height);
+
+                            .form-control{
+                                font-size: 1.1rem;
+                            }
+                        }
+                        .btn {
+                            color: var(--white);
+                            //padding: 0.3rem 2.125rem;
+                            background-color: var(--Sec_2_fontAwes_Col);
+                            border: none;
+                            height: var(--subscribe_height);
+                        }
+                    }
+                }
+            }
+
+            .Sec_7_block_2 {
+                .Sec_7_block_2_cardContainer {
+                    .card {
+                        border: none;
+                        //margin-right: 0;
+                        width: 100%!important;
+
+                        .card-img-top {
+                            width: 7.5rem;
+                            height: 5rem;
+                        }
+
+                        .card-body {
+                            .card-text {
+                                font-size: 0.6rem;
+                            }
+                        }
+                    }
+                }
+            }
+
+            .Sec_7_block_3 {
+            .Sec_7_block_3_picturreBlock {
+                img {
+                    margin: 0.125rem;
+                }
+            }
+            }
+
+            p:last-child {
+                span {
+                    color: var(--redLine_Col);
                 }
             }
         }
