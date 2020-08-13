@@ -12,6 +12,7 @@ body {
     --Sec_2_cardText_Col:  #999999;
     --Sec_2_lineBlock_Col: #e5e5e5;
     --subscribe_height: 2.5rem;
+    --Sec_6_pad : 6.8rem 0 8rem 0;
 
     
 
@@ -200,23 +201,16 @@ body {
                 }
 
                 .container {
-                    width: 60%;
                     position: relative;
-                    //margin-bottom: 7.5rem;
+                    padding-bottom: 7.5rem;
 
                     .row {
-                        //margin-bottom: 7.5rem;
+
                         .col-md-4 {
                             .card {
                                 border: none;
 
-                                .row {/* 
-                                    .col-md-3 {
-                                        .fa {
-                                            color: var(--Sec_2_fontAwes_Col);
-                                            font-size: 2rem;
-                                        }
-                                    } */
+                                .row {
 
                                     .col-md-9 {
                                         .card-body {
@@ -230,8 +224,6 @@ body {
                         .lineBlock {
                             background-color: var(--Sec_2_lineBlock_Col);
                             width: 100%;
-                            /* position: absolute;
-                            top: 20%; */
                         }
                     }
 
@@ -263,10 +255,6 @@ body {
                     margin-bottom: 1.375rem;
                 }
 
-                .lineBlock {
-                    margin-bottom: 2.8rem;
-                }
-
                 .Sec_3_imgBlock {
                     width: 25%;
                     position: relative;
@@ -289,10 +277,6 @@ body {
 
                 .kaushkanTextStyle {
                     margin-bottom: 1.5rem;
-                }
-
-                .lineBlock {
-                    margin-bottom: 2.875rem;
                 }
 
                 
@@ -437,7 +421,6 @@ body {
                         position: relative;
                         overflow: hidden;
                         box-shadow: 0.25rem 0.25rem 0.125rem 0.125rem var(--Sec_2_fontAwes_Col);
-                        margin: auto 1.875rem auto 1.875rem;
 
                         .card-body {
                             p:last-child {
@@ -486,20 +469,21 @@ body {
             }
 
             .Sec_6 {
-                padding-top: 6.8rem;
-                padding-bottom: 8rem;
+                padding: var(--Sec_6_pad);
                 position: relative;
                 background: rgba(255, 255, 255, 0.7);
                 
                 &:after {
                     content: '';
                     background-image: url(img/Layer-53.jpg);
+                    background-size: cover;
                     z-index: -1;
                     position: absolute;
                     width: 100%;
                     height: 100%;
                     top: 0;
                     left: 0;
+                    padding: var(--Sec_6_pad);
                 }
 
                 .container {
@@ -615,6 +599,566 @@ body {
             p:last-child {
                 span {
                     color: var(--redLine_Col);
+                }
+            }
+        }
+    }
+}
+
+//  ***   MEDIA   ***
+
+//  screen <= 1200 px(992 px)
+@media screen and (max-width: 1200px) {
+    body {
+
+        .lineBlock {
+            margin: 2.5rem auto;
+        }
+
+        .MainContainer {
+            header {
+                .Sec_1 {
+                    .creativeLine {
+                        margin-top: 4rem;
+                    }
+
+                    .h1 {
+                        font-size: 8rem;
+                    }
+
+                    .lineBlock {
+                        margin: 2.5rem auto;
+                    }
+
+                    .Sec_1_list {
+                        font-size: 1rem;
+
+                        .Sec_1_list_item {
+                            margin-top: 4.5rem;
+                        }
+                    }
+                }
+            }
+
+            article {
+                .Sec_2 {
+                    padding-top: 2.5rem;
+
+                    .container {
+                        padding-bottom: 4rem;
+                    }
+                }
+
+                .Sec_3 {
+                    padding-top: 3.8rem;
+                }
+
+                .Sec_4 {
+                    padding: 4rem auto;
+
+                    .Sec_4_InfoText {
+                        width: 50%;
+                    }
+
+                    .container {
+                        width: auto;
+                        margin-bottom: 3rem;
+                    }
+
+                    .caruselContainer {
+                        .carousel-inner {
+                            .carousel-item {
+                                .Sec_4_Quote {
+                                    .fa {
+                                        padding-right: 1.7rem;
+                                        padding-left: 1.7rem;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+
+                .Sec_5 {
+                    padding-top: 2rem;
+                    padding-bottom: 4.5rem;
+
+                    .Sec_5_InfoText {
+                        width: 50%;
+                    }
+                    
+                    .container {
+                        margin-top: 2.5rem;
+
+                        .card {
+                            margin-right: 0rem;
+                            margin-left: 0rem;
+                        }
+                    }
+                }
+
+                .Sec_6 {
+                    padding: 4rem 0;
+
+                    .container {
+                        .card {
+                            img {
+                                width: 80px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+//  screen <= 992 px(768 px)
+@media screen and (max-width: 992px) {
+    body {
+        .lineBlock {
+            width: 7%;
+            margin-top: 1.5rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .fontAwesomeClass {
+            font-size: 1.2rem;
+        }
+
+        .titleStyle {
+            font-size: 0.7rem;
+        }
+
+        .MainContainer {
+            header {
+                .Sec_1 {
+                    .creativeLine {
+                        margin-top: 2rem;
+                        font-size: 3rem;
+                    }
+
+                    .h1 {
+                        font-size: 5rem;
+                        margin-top: 0.5rem;
+                    }
+
+                    .lineBlock { 
+                        margin-top: 1.5rem;
+                        margin-bottom: 1.5rem;
+                    }
+
+                    .btn {
+                        font-size: 0.5rem;
+                        padding: 0.5rem 1rem;
+                    }
+
+                    .Sec_1_list {
+                        font-size: 0.7rem;
+
+                        .Sec_1_list_item {
+                            margin-top: 1.5rem;
+
+                            p span {
+                                font-size: 0.7rem;
+                            }
+                        }
+                    }
+                }
+            }
+
+            article {
+                .Sec_2 {
+                    padding-top: 0;
+
+                    p:first-child {
+                        margin-bottom: 0;
+                    }
+
+                    .container {
+                        padding-bottom: 1rem;
+                    }
+                }
+
+                .Sec_3 {
+                    padding-top: 1rem;
+
+                    p:first-child {
+                        margin-bottom: 0;
+                    }
+                }
+                
+                .Sec_4 {
+                    padding-top: 3rem;
+                    padding-bottom: 3rem;
+
+                    .kaushkanTextStyle {
+                        margin-bottom: 0;
+                    }
+
+                    .Sec_4_InfoText {
+                        width: 70%;
+                    }
+
+                    .container {
+                        margin: 2rem auto;
+
+                        img {
+                            width: 50%;
+                        }
+
+                        .Sec_4_dropContainer {
+                            width: 50%;
+                            margin: 0;
+
+                            .dropdown {
+                                .dropdown-menu {
+                                    height: 5rem;
+
+                                    .dropdown-item-text {
+                                        padding: 0rem;
+                                    }
+                                }
+                            }
+                        }
+                    }
+
+                    .caruselContainer {
+                        .carousel {
+                            .carousel-inner {
+                                .carousel-item {
+                                    .Sec_4_Quote {
+                                        .fa {
+                                            font-size: 1rem;
+                                            padding: 1.5rem 0.2rem;
+                                        }
+
+                                        .fa:first-child {
+                                            padding: 1.3rem auto;
+                                        }
+
+                                        .Sec_4_QuoteInfoBlock {
+                                            .Sec_4_QuoteText {
+                                                font-size: 1rem;
+
+                                                p {
+                                                    margin-top: 0.5rem;
+                                                    font-size: 1rem;
+                                                }
+                                                
+                                                .lineBlock {
+                                                    display: none;
+                                                }
+                                            }
+
+                                            
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+
+                .Sec_5 {
+                    padding: 1rem 0;
+
+                    .Sec_5_InfoText {
+                        width: 70%;
+                    }
+                }
+
+                .Sec_6 {
+                    padding: 2rem 0;
+
+                    .container {
+                        .card {
+                            
+                            img {
+                                width: 50px;
+                            }
+
+                            .card-body {
+                                .card-title, p {
+                                    margin: 0;
+                                }
+
+                                .lineBlock {
+                                    display: none;
+                                }
+
+                                .greyText {
+                                    font-size: 0.7rem;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+
+            .Sec_7 {
+                .container {
+                    .Sec_7_block_1 {
+                        .card-body {
+                            .card-title {
+                                font-size: 2rem;
+                                margin: 0;
+                            }
+
+                            p {
+                                margin: 0;
+                            }
+                        }
+                    }
+
+                    .Sec_7_block_2 {
+                        p:first-child {
+                            margin: 0;
+                        }
+
+                        .Sec_7_block_2_cardContainer {
+                            .card {
+                                img {
+                                    width: 100px;
+                                }
+                            }
+                        }
+                    }
+
+                    .Sec_7_block_3 {
+                        text-align: center;
+
+                        .Sec_7_block_3_picturreBlock {
+
+                            img {
+                                width: 65px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+//  screen <= 768 px(576 px)
+@media screen and (max-width: 768px) {
+    body {
+        .kaushkanTextStyle {
+            font-size: 1rem;
+        }
+
+        .heading {
+            font-size: 1.5rem;
+        }
+        .lineBlock {
+            display: none;
+        }
+
+        .MainContainer {
+            header {
+                background-image: none;
+                .Sec_1 {
+                    .navbar {
+                        padding:0;
+                    }
+
+                    .creativeLine {
+                        margin: 1.7rem 0;
+                        font-size: 2rem;
+                    }
+
+                    .btn {
+                        margin: 1.7rem 0;
+                    }
+
+                    .h1 {
+                        font-size: 3rem;
+                        margin: 0.7rem 0;
+
+                        .nextRow {
+                            display: none;
+                        }
+                    }
+
+                    .lineBlock {
+                        display: none;
+                    }
+
+                    .Sec_1_list {
+                        width: 80%;
+                        margin-bottom: 0;
+                    }
+                }
+            }
+
+            article {
+                .Sec_2 {
+                    .container {
+                        padding: 0;
+                        .row {
+                            .col-sm-7 {
+                                .card, .mb-3{
+                                    margin-bottom: 0.5rem!important;
+
+                                    .row {
+                                        .col-sm-9 {
+                                            .card-body {
+                                                .card-text {
+                                                    display: none;
+                                                }
+                                            }
+                                        }
+
+                                        &:hover {
+                                            .col-sm-9 {
+                                                .card-body {
+                                                    .card-text {
+                                                        display: block;
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+
+                .Sec_4 {
+                    padding: 1rem 0;
+
+                    .Sec_4_InfoText {
+                        width: 85%;
+                    }
+
+                    .container {
+                        margin: 0.5rem 0;
+                        flex-direction: column;
+                        align-items: center;
+
+                        .Sec_4_dropContainer {
+                            width: 80%;
+                            .dropdown {
+                                .btn {
+                                    p {
+                                        margin-bottom: 0;
+                                    }
+                                }
+                            }
+
+                        }
+                    }
+
+                    .caruselContainer {
+                        .carousel {
+                            .carousel-item {
+                                .Sec_4_Quote {
+                                    .fontAwesomeClass {
+                                        display: none;
+                                    }
+
+                                    p {
+                                        margin: 0;
+                                        font-size: 0.7rem;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+
+                .Sec_5 {
+                    p {
+                        margin: 0;
+                    }
+
+                    .Sec_5_InfoText {
+                        width: 85%;
+                    }
+
+                    .container {
+                        margin-top: 1rem;
+
+                        .card {
+                            align-items: center;
+
+                            .card-img-top {
+                                width: 150px;
+                            }
+
+                            .card-body {
+                                padding: 0.7rem;
+                            }
+                        }
+                    }
+                }
+
+                .Sec_6 {
+                    padding: 0.5rem;
+
+                    p {
+                        margin: 0;
+                    }
+
+                    &:after {
+                        background-image: none;
+                    }
+                }
+            }
+
+            .Sec_7 {
+                padding: 1rem 0;
+            }
+        }
+    }
+}
+
+//  screen <= 576 px
+@media screen and (max-width: 576px) {
+    body {
+        .MainContainer {
+            header {
+                .Sec_1 {
+                    .btn {
+                        font-size: 1rem;
+                    }
+
+                    .Sec_1_list {
+                        flex-wrap: wrap;
+
+                        .Sec_1_list_item {
+                            width: 45%;
+                            margin: 2.5%;
+                        }
+                    }
+                }
+            }
+
+            article {
+                .Sec_3 {
+                    .Sec_3_imgBlock {
+                        width: 60%;
+                    }
+                }
+
+                .Sec_4 {
+                    .container {
+                        img {
+                            width: 100%;
+                        }
+
+                        .Sec_4_dropContainer {
+                            width: 100%;
+
+                            .dropdown {
+                                .dropdown-menu {
+                                    height: auto;
+                                }
+                            }
+                        }
+                    }
                 }
             }
         }
